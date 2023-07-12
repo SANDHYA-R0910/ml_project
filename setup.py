@@ -2,12 +2,12 @@ from setuptools import setup,find_packages
 from typing import List
 
 HYPEN_E_DOT = "-e ."
-def get_requiremts(file_path=str)->List[str]:
+def get_requirements(file_path=str)->List[str]:
     '''
     this function will return a list of requirements
     
     '''
-     
+    
     requirements = []
     with open(file_path) as file_obj:
         requirements = file_obj.readlines()
@@ -26,7 +26,7 @@ setup(
     author='Sandy',
     author_email='sandhyarsanju@gmail.com',
     packages=find_packages(),
-    install_requirements=get_requiremts('requirements.txt')
+    install_requirements=get_requirements('requirements.txt')
 )
     
     
