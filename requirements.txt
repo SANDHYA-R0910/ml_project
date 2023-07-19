@@ -6,4 +6,5 @@ xgboost
 catboost
 scikit-learn
 matplotlib
+Flask
 -e .       # this is automatically triggered steup.py 
